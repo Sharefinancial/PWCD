@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Login&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Basic styling with overrides */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #000000 !important; /* Background color of the page */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden !important; /* Prevent scrolling */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100% !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 0px solid #ddd !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #000000 !important; /* Container background color */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important; /* Optional: Add some shadow for better visibility */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0 !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff !important; /* Set the Login text color to white */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center !important; /* Center align the heading */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>input {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100% !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0 !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9 !important; /* Input background color */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333 !important; /* Input text color */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100% !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #4CAF50 !important; /* Button background color */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white !important; /* Button text color */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #45a049 !important; /* Button hover color */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cta-links {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cta-links a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4CAF50 !important; /* Link color */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cta-links a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#errorMessage {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: red !important;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Login&lt;/h2&gt; &lt;!-- The text "Login" is now white --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form id="loginForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="username" placeholder="Username" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="password" id="password" placeholder="Password" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit"&gt;Login&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p id="errorMessage"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cta-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="/forgot-password"&gt;Forgot Password?&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="/sign-up"&gt;Not a Member? Sign Up&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="login.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
